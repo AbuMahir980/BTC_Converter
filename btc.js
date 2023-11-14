@@ -11,6 +11,7 @@ const btcConvert = async () => {
 
     return(convertFetchApi.bpi.USD.rate_float);
 };
+
 const btcCode = async () => {
 	const codeFetchApi = await fetch(
 		"https://api.coindesk.com/v1/bpi/currentprice.json"
@@ -19,6 +20,7 @@ const btcCode = async () => {
 	// console.log(codeFetcher.bpi.USD.code);
     return(codeFetcher.bpi.USD.code);
 };
+
 // console.log(btcCode());
 button.addEventListener('click', async () =>{
     const currValue = Number(input.value);
